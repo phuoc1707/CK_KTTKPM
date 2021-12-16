@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: department-service
+  #database
+  datasource:
+    url: jdbc:mysql://localhost:3306/on_kttkpm_department
+    username: root
+    password: diem66
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        ddl-auto: update
+    generate-ddl: true
+
+
